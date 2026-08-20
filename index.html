@@ -263,6 +263,21 @@
   .timeline-item .meta{font-family:'JetBrains Mono',monospace; font-size:.78rem; color:var(--ink-soft); margin-bottom:.6em;}
   .timeline-item p{color:var(--ink-soft); margin:0; max-width:60ch;}
 
+  /* PROJECTS */
+  .projects-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:24px;}
+  .project-card{
+    background:var(--paper); border:1px solid var(--line); border-radius:var(--radius);
+    padding:28px; display:flex; flex-direction:column;
+  }
+  .project-card h3{font-family:'Fraunces',serif; font-size:1.35rem; margin:0 0 .3em;}
+  .project-stack{
+    font-family:'JetBrains Mono',monospace; font-size:.78rem; color:var(--bio);
+    margin:0 0 1.1em; font-style:italic;
+  }
+  .project-card ul{margin:0; padding-left:1.2em; color:var(--ink-soft); font-size:.94rem;}
+  .project-card li{margin-bottom:.55em;}
+  .project-card li:last-child{margin-bottom:0;}
+
   /* GITHUB / ACTIVITY */
   .github-card{
     background:var(--ink); color:var(--paper); border-radius:var(--radius); padding:34px;
@@ -318,6 +333,7 @@
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
       <a href="#activity">GitHub</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -468,11 +484,44 @@
     </div>
   </section>
 
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Specimen 04</span>
+        <h2>Projects</h2>
+      </div>
+      <div class="projects-grid reveal">
+        <div class="project-card">
+          <h3>Flipkart Mobile Phones Web Scraper</h3>
+          <p class="project-stack">Python, BeautifulSoup, Requests</p>
+          <ul>
+            <li>Developed a Python web scraper using BeautifulSoup and Requests to extract mobile phone listing data from Flipkart.</li>
+            <li>Processed HTML content to identify and extract relevant product fields such as name, price, and ratings.</li>
+            <li>Structured and saved the scraped data into CSV format for further use and analysis.</li>
+            <li>Applied problem-solving skills to handle inconsistent page structures during the scraping process.</li>
+            <li>Published the project code on GitHub.</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>Makeup Dataset Analysis</h3>
+          <p class="project-stack">Python, Pandas, NumPy, Matplotlib, Seaborn</p>
+          <ul>
+            <li>Performed exploratory data analysis (EDA) on a makeup/cosmetics product dataset using Pandas and NumPy.</li>
+            <li>Cleaned and processed raw data to handle missing values and inconsistencies prior to analysis.</li>
+            <li>Created visualizations with Matplotlib and Seaborn to explore trends and relationships within the dataset.</li>
+            <li>Applied statistical concepts to interpret patterns and summarize key findings from the data.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- GITHUB / ACTIVITY -->
   <section id="activity" style="background:var(--paper-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="eyebrow">Specimen 04</span>
+        <span class="eyebrow">Specimen 05</span>
         <h2>Currently Building</h2>
       </div>
       <div class="reveal">
@@ -501,7 +550,7 @@
   <footer id="contact">
     <div class="wrap footer-grid">
       <div>
-        <span class="eyebrow">Specimen 05 / Contact</span>
+        <span class="eyebrow">Specimen 06 / Contact</span>
         <h2>Let's build something.</h2>
         <p>I'm looking for internships and entry-level opportunities in AI, ML and Data. If that's what you're hiring for — or you just want to talk shop about Generative AI — reach out.</p>
       </div>
